@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -10,6 +11,7 @@
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
+
 <body>
 	<div class="reveal">
 		<div class="slides">
@@ -18,13 +20,13 @@
 				<h4 style="font-style:italic;">The Missing Glue Between Your Payments, Code and Hardware</h4>
 				<p>İrem Kuyucu, Laurynas Četyrkinas @ Digilol</p>
 			</section>
-			
+
 			<section>
 				<h3>Who are we?</h3>
 				<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 4em;">
 					<div>
 						<p style="color: var(--r-link-color)">İrem</p>
-						<img src="./img/irem.jpg" width="200px"/>
+						<img src="./img/irem.jpg" width="200px" />
 						<p style="text-align: left;">Day-job: Pentester</p>
 						<p style="text-align: left;">Night-job: Pentester & dev at Digilol</p>
 					</div>
@@ -36,7 +38,9 @@
 					</div>
 				</div>
 			</section>
-
+			<section>
+				<h3>What do we do at Digilol?</h3>
+			</section>
 			<section>
 				<h3>We are now telling everyone</h3>
 				<img src="./img/theymade.png">
@@ -50,19 +54,23 @@
 			</section>
 			<!-- Projects Section with Progressive Transitions -->
 			<section>
-				<section data-transition="fade" data-background-size="contain"  data-background-image="./img/moneropay-logo.png" data-background-opacity="0.3">
+				<section data-transition="fade" data-background-size="contain"
+					data-background-image="./img/moneropay-logo.png" data-background-opacity="0.3">
 					<h3>Our Projects</h3>
 					<p>MoneroPay</p>
 				</section>
-				<section data-transition="fade" data-background-size="contain" data-background-image="./img/monero-atm.png" data-background-opacity="0.3">
+				<section data-transition="fade" data-background-size="contain"
+					data-background-image="./img/monero-atm.png" data-background-opacity="0.3">
 					<h3>Our Projects</h3>
 					<p>The Monero ATM Project</p>
 				</section>
-				<section data-transition="fade" data-background-size="contain" data-background-image="./img/gopher.png" data-background-opacity="0.3">
+				<section data-transition="fade" data-background-size="contain" data-background-image="./img/gopher.png"
+					data-background-opacity="0.3">
 					<h3>Our Projects</h3>
 					<p>go-monero</p>
 				</section>
-				<section data-transition="fade" data-background-size="400px" data-background-image="./img/metronero-logo.png" data-background-opacity="0.3">
+				<section data-transition="fade" data-background-size="400px"
+					data-background-image="./img/metronero-logo.png" data-background-opacity="0.3">
 					<h3>Our Projects</h3>
 					<p>Metronero</p>
 					<p style="font-style:italic;">(big reveal ahead!)</p>
@@ -71,7 +79,7 @@
 			<section>
 				<h3>What is MoneroPay?</h3>
 				<p>Monero payment processor with the most stars ⭐</p>
-				<img src="./img/moneropay-graph.png"/>
+				<img src="./img/moneropay-graph.png" />
 			</section>
 			<section>
 				<h3>Simple HTTP API</h3>
@@ -114,6 +122,33 @@
 			</section>
 			<section>
 				<h3>Multi-merchant</h3>
+				<video data-autoplay loop src="./video/multimerchant.webm"></video>
+			</section>
+			<section>
+				<h3>Customizable</h3>
+				<p>Tor friendly - no JS required.</p>
+				<video data-autoplay loop src="./video/templates.webm"></video>
+			</section>
+			<section>
+				<h3>Withdrawals</h3>
+				<p>Instance admins can withdraw funds.</p>
+				<img src="./img/withdraw.png">
+			</section>
+			<section>
+				<h3>Invoice/Payment Handling</h3>
+				<p>Statuses: Pending, Confirming, Partial, Expired.</p>
+			</section>
+			<section>
+				<h3>PoS Mode</h3>
+			</section>
+			<section>
+				<h3>Easy deployment</h3>
+			</section>
+			<section>
+				<h3>Roadmap</h3>
+			</section>
+			<section>
+				<h3>How to help</h3>
 			</section>
 		</div>
 	</div>
@@ -125,8 +160,9 @@
 	<script>
 		Reveal.initialize({
 			hash: true,
-			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
 	</script>
 </body>
+
 </html>
