@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>3 Years of MoneroPay - The Missing Glue Between Your Payments, Code and Hardware</title>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/dracula.css">
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="./img/digilol-bg.jpg">
+				<h3>3 Years of MoneroPay</h3>
+				<h4 style="font-style:italic;">The Missing Glue Between Your Payments, Code and Hardware</h4>
+				<p>İrem Kuyucu, Laurynas Četyrkinas @ Digilol</p>
+			</section>
+			
+			<section>
+				<h3>Who are we?</h3>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 4em;">
+					<div>
+						<p style="color: var(--r-link-color)">İrem</p>
+						<img src="./img/irem.jpg" width="200px"/>
+						<p style="text-align: left;">Day-job: Pentester</p>
+						<p style="text-align: left;">Night-job: Pentester & dev at Digilol</p>
+					</div>
+					<div>
+						<p style="color: var(--r-bold-color)">Laurynas</p>
+						<img src="./img/laurynas.jpg" width="200px" />
+						<p style="text-align: left;">Day-job: SRE</p>
+						<p style="text-align: left;">Night-job: DevOps at Digilol</p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h3>We are now telling everyone</h3>
+				<img src="./img/theymade.png">
+			</section>
+			<section>
+				<div style="display: grid; grid-template-columns: 1fr auto 1fr; column-gap: 2em; align-items: center;">
+					<img src="./img/ransomware.png">
+					<p>→</p>
+					<img src="./img/moneropay-logo.png">
+				</div>
+			</section>
+			<!-- Projects Section with Progressive Transitions -->
+			<section>
+				<section data-transition="fade" data-background-size="contain"  data-background-image="./img/moneropay-logo.png" data-background-opacity="0.3">
+					<h3>Our Projects</h3>
+					<p>MoneroPay</p>
+				</section>
+				<section data-transition="fade" data-background-size="contain" data-background-image="./img/monero-atm.png" data-background-opacity="0.3">
+					<h3>Our Projects</h3>
+					<p>The Monero ATM Project</p>
+				</section>
+				<section data-transition="fade" data-background-size="contain" data-background-image="./img/gopher.png" data-background-opacity="0.3">
+					<h3>Our Projects</h3>
+					<p>go-monero</p>
+				</section>
+				<section data-transition="fade" data-background-size="400px" data-background-image="./img/metronero-logo.png" data-background-opacity="0.3">
+					<h3>Our Projects</h3>
+					<p>Metronero</p>
+					<p style="font-style:italic;">(big reveal ahead!)</p>
+				</section>
+			</section>
+			<section>
+				<h3>What is MoneroPay?</h3>
+				<p>Monero payment processor with the most stars ⭐</p>
+				<img src="./img/moneropay-graph.png"/>
+			</section>
+			<section>
+				<h3>Simple HTTP API</h3>
+				<p style="color: var(--r-link-color)">GET /balance</p>
+				<p style="color: var(--r-link-color)">GET /health</p>
+				<p style="color: var(--r-bold-color)">POST /receive</p>
+				<p style="color: var(--r-link-color)">GET /receive/:address?min=&max=</p>
+				<p style="color: var(--r-bold-color)">POST /transfer</p>
+				<p style="color: var(--r-link-color)">GET /transfer/:tx_hash</p>
+			</section>
+			<section>
+				<h3>Callbacks</h3>
+				<p>0-conf / mempool</p>
+				<p>1-conf</p>
+				<p>On unlock (for most it's 10-conf)</p>
+			</section>
+			<section>
+				<h3>The Monero ATM Project</h3>
+				<img src="./img/atm-revisions.png" width="80%">
+			</section>
+			<section>
+				<h3>ATM / OpenKiosk Architecture</h3>
+				<img src="./img/monero-atm-graph.png">
+			</section>
+			<section>
+				<h3>Are we BTCPayServer yet?</h3>
+				<p>Maybe...</p>
+			</section>
+			<section>
+				<p>We want Monero to be a first class citizen.</p>
+				<p class="fragment">And we want easy, lightweight deployments. No bloat.</p>
+			</section>
+			<section>
+				<h3>WTF?</h3>
+				<img src="./img/btcpayinstall.png" width="85%">
+			</section>
+			<section>
+				<h3>Introducing Metronero</h3>
+				<p>Our WIP BTCPayServer alternative.</p>
+			</section>
+			<section>
+				<h3>Multi-merchant</h3>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		});
+	</script>
+</body>
+</html>
